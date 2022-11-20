@@ -1,0 +1,89 @@
+name: social_fractal
+description: Chat with your friends.
+publish_to: none
+version: 0.6.4+2327
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  fluffychat:
+    path: ../fluffychat
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  velocity_x: ^3.6.0
+
+dev_dependencies:
+  dart_code_metrics: ^4.10.1
+  flutter_lints: ^2.0.1
+  flutter_native_splash: ^2.0.3+1
+  flutter_test:
+    sdk: flutter
+  import_sorter: ^4.6.0
+  integration_test:
+    sdk: flutter
+  msix: ^3.6.2
+
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#000000"
+  image: "assets/info-logo.png"
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/stack/
+    - assets/sounds/
+    - assets/js/
+    - assets/js/package/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto/Roboto-Regular.ttf
+        - asset: fonts/Roboto/Roboto-Italic.ttf
+          style: italic
+        - asset: fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+    - family: NotoEmoji
+      fonts:
+        - asset: fonts/NotoEmoji/NotoColorEmoji.ttf
+
+msix_config:
+  display_name: FluffyChat
+  publisher_display_name: FluffyChat
+  publisher: CN=FluffyChat, O=Head of bad integration tests, L=Matrix, S=Internet, C=EU
+  identity_name: chat.fluffy.fluffychat
+  logo_path: assets\logo.png
+  capabilities: internetClient, location, microphone, webcam
+  protocol_activation: https
+  app_uri_handler_hosts: fluffychat.im, matrix.to
+  execution_alias: fluffychat
+  sign_msix: false
+  install_certificate: false
+
+dependency_overrides:
+  # Until all dependencies are compatible. Missing: file_picker_cross, flutter_matrix_html
+  ffi: ^2.0.0
+
+  # fake secure storage plugin for Windows
+  # See: https://gitlab.com/gitlab-com/gl-infra/reliability/-/issues/15161
+  flutter_secure_storage_windows:
+    git:
+      url: https://gitlab.com/TheOneWithTheBraid/flutter_secure_storage_windows.git
+      ref: main
+  geolocator_android:
+    hosted:
+      name: geolocator_android
+      url: https://hanntech-gmbh.gitlab.io/free2pass/flutter-geolocator-floss
+  # waiting for null safety
+  # Upstream pull request: https://github.com/AntoineMarcel/keyboard_shortcuts/pull/13
+  keyboard_shortcuts:
+    git:
+      url: https://github.com/TheOneWithTheBraid/keyboard_shortcuts.git
+      ref: null-safety
