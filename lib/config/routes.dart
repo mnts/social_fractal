@@ -1,5 +1,6 @@
 import 'package:fluffychat/config/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:fractal_gold/screens/fscreen.dart';
 import '../pages/settings/settings.dart';
 import '../slides.dart';
 import '/pages/homeserver_picker/homeserver_picker.dart';
@@ -53,7 +54,7 @@ class QIAppRoutes {
   List<VRouteElement> get _mobileRoutes => [
         VWidget(
           path: '/rooms',
-          widget: const ChatList(),
+          widget: FScreen(ChatList()),
           stackedRoutes: [
             VWidget(
               path: '/stories/create',
@@ -120,11 +121,12 @@ class QIAppRoutes {
             mainView: const ChatList(),
             sideView: child,
           ),
-          buildTransition: _fadeTransition,
+          buildTransition: (animation1, _, child) =>
+              ScaleTransition(scale: animation1, child: child),
           nestedRoutes: [
             VWidget(
               path: '',
-              widget: CyberSlides(),
+              widget: EmptyPage(),
               buildTransition: _fadeTransition,
               stackedRoutes: [
                 VWidget(
@@ -203,7 +205,7 @@ class QIAppRoutes {
           path: '/rooms',
           widget: TwoColumnLayout(
             mainView: ChatList(),
-            sideView: CyberSlides(),
+            sideView: EmptyPage(),
           ),
           buildTransition: _fadeTransition,
           stackedRoutes: [
@@ -236,7 +238,6 @@ class QIAppRoutes {
       ];
 
   List<VRouteElement> get _homeRoutes => [
-        VWidget(path: '/', widget: const LoadingView()),
         VWidget(
           path: '/home',
           widget: const FHomeserverPicker(),

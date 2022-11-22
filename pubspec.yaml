@@ -4,17 +4,22 @@ publish_to: none
 version: 0.6.4+2327
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
   fluffychat:
     path: ../fluffychat
+  fractals:
+    path: ../../pub/fractals
+  fractal_gold:
+    path: ../../pub/fractal_gold
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
   intl: any
   velocity_x: ^3.6.0
+  matrix: ^0.15.2
 
 dev_dependencies:
   dart_code_metrics: ^4.10.1
@@ -26,6 +31,11 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   msix: ^3.6.2
+  hive: ^2.0.6
+  adaptive_dialog: ^1.5.1
+  future_loading_dialog: ^0.2.3
+  image_picker: ^0.8.4+8
+  vrouter: ^1.2.0+21
 
 flutter_native_splash:
   color: "#ffffff"
