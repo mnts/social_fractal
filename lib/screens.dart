@@ -2,10 +2,7 @@ import 'package:fluffychat/pages/chat_list/chat_list.dart';
 import 'package:flutter/material.dart';
 import 'package:fractal_gold/models/screen.dart';
 import 'package:fractal_gold/screens/index.dart';
-
-import 'fluffy.dart';
-import 'slides.dart';
-
+import 'package:social_fractal/widgets/slides.dart';
 /*
 import 'diagram.dart';
 import 'models/diagram.dart';
@@ -16,7 +13,7 @@ final slidesScreen = ScreenFractal(
   name: 'slides',
   title: 'Presentation',
   icon: Icons.slideshow,
-  builder: CyberSlides.new,
+  builder: FractalSlides.new,
 );
 
 final peopleScreen = ScreenFractal(

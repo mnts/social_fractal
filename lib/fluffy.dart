@@ -106,7 +106,7 @@ class FluffyChatAppState extends State<FluffyChatApp> {
                   }
                   return VRouter(
                     key: FluffyChatApp.routerKey,
-                    title: AppConfig.applicationName,
+                    title: app.title.value,
                     debugShowCheckedModeBanner: false,
                     theme: theme,
                     //scrollBehavior: CustomScrollBehavior(),

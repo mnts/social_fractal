@@ -12,6 +12,7 @@ final app = AppFractal(
   color: Color.fromARGB(255, 120, 0, 133),
   icon: Image.asset('assets/logo.png'),
   title: 'SocialFractal',
+  repoUrl: 'http://localhost',
   //hideAppBar: true,
   auths: [
     LocalAuthFractal(),
