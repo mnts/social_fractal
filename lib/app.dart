@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fractal_gold/auth/fractals/index.dart';
-import 'package:fractal_gold/layouts/fractal.dart';
 import 'package:fractal_gold/models/app.dart';
-import 'package:fractals/models/index.dart';
 
 import 'screens.dart';
-import 'widgets/avatar.dart';
 
 final app = AppFractal(
   id: 'axio',

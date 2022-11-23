@@ -72,7 +72,7 @@ class FractalSlide extends StatelessWidget {
                   height: 300,
                   width: 600,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(171, 179, 179, 179),
+                    color: Color.fromARGB(196, 215, 215, 215),
                     borderRadius: BorderRadius.all(
                       Radius.circular(15),
                     ),

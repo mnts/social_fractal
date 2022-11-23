@@ -2,7 +2,6 @@ import 'package:fluffychat/config/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:fractal_gold/screens/fscreen.dart';
 import '../pages/settings/settings.dart';
-import '../slides.dart';
 import '/pages/homeserver_picker/homeserver_picker.dart';
 
 import 'package:vrouter/vrouter.dart';
