@@ -6,7 +6,7 @@ import 'package:social_fractal/slides/entanglement.dart';
 import 'package:social_fractal/slides/home.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/slide.dart';
-import '../slides/slide.dart';
+import 'slide.dart';
 import '/slides/tech.dart';
 import '/slides/vax.dart';
 

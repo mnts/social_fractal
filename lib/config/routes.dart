@@ -53,7 +53,7 @@ class QIAppRoutes {
   List<VRouteElement> get _mobileRoutes => [
         VWidget(
           path: '/rooms',
-          widget: FScreen(ChatList()),
+          widget: ChatList(),
           stackedRoutes: [
             VWidget(
               path: '/stories/create',

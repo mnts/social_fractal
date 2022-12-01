@@ -43,8 +43,8 @@ android {
     }
 
     defaultConfig {
-        applicationId "chat.fluffy.fluffychat"
-        minSdkVersion 16
+        applicationId "chat.fluffy.fractal"
+        minSdkVersion 28
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

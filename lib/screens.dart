@@ -16,13 +16,6 @@ final slidesScreen = ScreenFractal(
   builder: FractalSlides.new,
 );
 
-final peopleScreen = ScreenFractal(
-  name: 'people',
-  icon: Icons.people_outline,
-  title: 'People',
-  builder: PeopleScreen.new,
-);
-
 //final diagramScreen = DiagramScreenFractal();
 
 /*

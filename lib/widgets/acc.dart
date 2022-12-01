@@ -318,7 +318,7 @@ class _FractalAccState extends State<FractalAcc> {
               profile?.displayName ??
                   Matrix.of(context).client.userID!.localpart!,
             ),
-            backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+            //backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
             flexibleSpace: FlexibleSpaceBar(
               background: ContentBanner(
                 mxContent: profile?.avatarUrl,

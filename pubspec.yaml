@@ -9,40 +9,26 @@ environment:
 dependencies:
   fluffychat:
     path: ../fluffychat
-  fractals:
-    path: ../../pub/fractals
-  fractal_gold:
-    path: ../../pub/fractal_gold
   flutter:
     sdk: flutter
-  frac:
-    path: ../../pub/frac
-  fractal_word:
-    path: ../../pub/fractal_word
   flutter_localizations:
     sdk: flutter
+  flutter_markdown: ^0.6.9
+  frac:
+    path: ../../pub/frac
+  fractal_gold:
+    path: ../../pub/fractal_gold
+  fractal_word:
+    path: ../../pub/fractal_word
+  fractals:
+    path: ../../pub/fractals
   intl: any
-  velocity_x: ^3.6.0
   matrix: ^0.15.2
   provider: ^6.0.2
-  flutter_markdown: ^0.6.9
+  velocity_x: ^3.6.0
 
 dev_dependencies:
-  dart_code_metrics: ^4.10.1
-  flutter_lints: ^2.0.1
-  flutter_native_splash: ^2.0.3+1
-  flutter_test:
-    sdk: flutter
-  import_sorter: ^4.6.0
-  integration_test:
-    sdk: flutter
-  msix: ^3.6.2
-  hive: ^2.0.6
-  adaptive_dialog: ^1.5.1
-  future_loading_dialog: ^0.2.3
-  image_picker: ^0.8.4+8
-  vrouter: ^1.2.0+21
-  cached_network_image: ^3.2.2
+  lints: ^1.0.0
 
 flutter_native_splash:
   color: "#ffffff"
