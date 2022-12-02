@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:fractal_gold/models/screen.dart';
 import 'package:fractal_gold/screens/index.dart';
 import 'package:social_fractal/widgets/slides.dart';
+import 'package:flutter/material.dart';
+import 'package:fractal_gold/areas/catalog.dart';
+import 'package:fractal_gold/models/screen.dart';
+import 'package:social_fractal/screens/stuff.dart';
 /*
 import 'diagram.dart';
 import 'models/diagram.dart';
@@ -25,6 +29,20 @@ final rtcScreen = ScreenFractal(
   builder: DataChannelSample.new,
 );
 */
+
+final catalogArea = ScreenFractal(
+  name: 'catalog',
+  title: 'Catalog',
+  icon: Icons.image_search,
+  builder: CatalogArea.new,
+);
+
+final stuffScreen = ScreenFractal(
+  name: 'stuff',
+  title: 'Stuff',
+  icon: Icons.category,
+  builder: StuffScreen.new,
+);
 
 final fluffyScreen = ScreenFractal(
   audience: Audience.authenticated,

@@ -76,7 +76,6 @@ class FractalSlide extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    width: 700,
                     padding: const EdgeInsets.symmetric(
                       vertical: 12,
                       horizontal: 26,

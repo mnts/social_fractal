@@ -18,6 +18,8 @@ dependencies:
     path: ../../pub/frac
   fractal_gold:
     path: ../../pub/fractal_gold
+  fractal_wysiwyg:
+    path: ../../pub/fractal_wysiwyg
   fractal_word:
     path: ../../pub/fractal_word
   fractals:

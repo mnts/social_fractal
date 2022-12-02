@@ -28,6 +28,7 @@ import 'package:collection/collection.dart';
 
 import 'widgets/acc.dart';
 import 'widgets/auth.dart';
+import 'widgets/name.dart';
 
 class SocialFractalApp extends StatefulWidget {
   final Widget? testWidget;
@@ -154,6 +155,24 @@ class SocialFractalAppState extends State<SocialFractalApp> {
                 clients: app.clients,
                 child: FractalLayout(
                   app,
+                  topRight: app.clients.first.isLogged()
+                      ? InkWell(
+                          radius: 6,
+                          onTap: () {},
+                          child: Padding(
+                            padding: EdgeInsets.only(
+                              top: 12,
+                              left: 8,
+                              right: 4,
+                            ),
+                            child: MatrixName(
+                              style: TextStyle(
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        )
+                      : null,
                   footer: Row(
                     children: [
                       IconButton(
