@@ -307,6 +307,7 @@ class _FractalAccState extends State<FractalAcc> {
     });
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) =>
             <Widget>[

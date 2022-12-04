@@ -7,7 +7,7 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "49.0.0"
+    version: "47.0.0"
   adaptive_dialog:
     dependency: transitive
     description:
@@ -28,14 +28,14 @@ packages:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.1.0"
+    version: "4.7.0"
   analyzer_plugin:
     dependency: transitive
     description:
       name: analyzer_plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.11.2"
+    version: "0.10.0"
   animations:
     dependency: transitive
     description:
@@ -287,7 +287,7 @@ packages:
       name: dart_code_metrics
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.21.3"
+    version: "4.19.2"
   dart_style:
     dependency: transitive
     description:
@@ -1094,13 +1094,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
-  json_annotation:
-    dependency: transitive
-    description:
-      name: json_annotation
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.7.0"
   just_audio:
     dependency: transitive
     description:
@@ -1537,13 +1530,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
-  pub_updater:
-    dependency: transitive
-    description:
-      name: pub_updater
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.2"
   punycode:
     dependency: transitive
     description:
@@ -1982,7 +1968,7 @@ packages:
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.1.6"
+    version: "6.1.7"
   url_launcher_android:
     dependency: transitive
     description:

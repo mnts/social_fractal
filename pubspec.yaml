@@ -28,6 +28,7 @@ dependencies:
   matrix: ^0.15.2
   provider: ^6.0.2
   velocity_x: ^3.6.0
+  vrouter: ^1.2.0+21
 
 dev_dependencies:
   lints: ^1.0.0
