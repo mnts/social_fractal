@@ -14,6 +14,10 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_markdown: ^0.6.9
+  currency_fractal:
+    path: ../../pub/currency_fractal
+  currency_ui:
+    path: ../currency_ui
   frac:
     path: ../../pub/frac
   fractal_gold:
@@ -76,6 +80,7 @@ msix_config:
 dependency_overrides:
   # Until all dependencies are compatible. Missing: file_picker_cross, flutter_matrix_html
   ffi: ^2.0.0
+  markdown: ^5.0.0
 
   # fake secure storage plugin for Windows
   # See: https://gitlab.com/gitlab-com/gl-infra/reliability/-/issues/15161

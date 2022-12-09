@@ -1,5 +1,4 @@
 import 'package:fluffychat/utils/fluffy_share.dart';
-import 'package:fluffychat/widgets/crypto.dart';
 import 'package:fluffychat/widgets/matrix.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';

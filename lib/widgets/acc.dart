@@ -1,11 +1,10 @@
 import 'dart:convert';
 import 'dart:typed_data';
-
+import 'package:currency_ui/eth.dart';
 import 'package:fluffychat/pages/bootstrap/bootstrap_dialog.dart';
 import 'package:fluffychat/utils/fluffy_share.dart';
 import 'package:fluffychat/utils/platform_infos.dart';
 import 'package:fluffychat/widgets/content_banner.dart';
-import 'package:fluffychat/widgets/crypto.dart';
 import 'package:fluffychat/widgets/matrix.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
@@ -342,7 +341,14 @@ class _FractalAccState extends State<FractalAcc> {
                 context,
               ),
             ),
-            FractalCrypto(name: client.userID!),
+            FractalEth(
+                matrixId: client.userID!,
+                onTap: (eth) {
+                  FluffyShare.share(
+                    eth,
+                    context,
+                  );
+                }),
             const Divider(height: 1),
             ElevatedButton.icon(
               onPressed: () async {
